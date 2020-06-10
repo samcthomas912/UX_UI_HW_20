@@ -1,0 +1,142 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: #FAFAF6;
+  }
+
+.sitenav{
+    height: 100px;
+    background-color: #FAFAF6;
+    color: #031926;
+    padding-right:60px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav_buttons{
+    display: block;
+    padding: 20px;
+    float: right;
+    cursor: pointer;
+
+}
+
+.nav_buttons:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+    color: #031926;
+}
+
+.nav{
+    padding-bottom:32px;
+}
+
+.section-header{
+    background-color: yellow;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centered{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.description .card-text{
+    width: auto;
+    text-align: center;
+}
+
+
+.description p{
+    width: 500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.lists{
+    width: 500px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 20px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+    color: #031926;
+}
+
+.spanpage{
+    width: 100%;
+    z-index: 0;
+}
+
+.row{
+    display: flex;
+    align-items: flex-end;
+    background-color: white;
+    height:auto;
+}
+.card{
+    border: none;
+}
+
+/*Footer*/
+
+footer{
+    background-color:#93B5C6;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+    footer img{
+        height: 40px;
+        padding-bottom:25px;
+    }
+    
+    footer p{
+        font-size: 16px;
+        text-align: center;
+        line-height: 23px;
+    }
+    
+    footer h2{
+        font-size: 30px;
+        font-family: "Khmer MN", "Ogirema", "Times Sans Serif", sans-serif;
+        color: #031926; 
+    }
+
+
+
+
+@media only screen and (max-width: 900px){
+
+    /* navigation */
+
+    .sitenav{
+        padding-right:0px;
+        padding-left:0px;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+    }
+    
+    .nav_buttons{
+        padding-top: 20px;
+        text-align: center;
+    }
+}

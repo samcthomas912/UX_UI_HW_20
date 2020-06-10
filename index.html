@@ -1,10 +1,369 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
+
         <title>UX/UI Homework 20</title>
     </head>
 
     <body>
+        <!--Navigation-->
+        <header class = "sitenav">
+            <ul>
+                <li class = "nav_buttons">Work</li>
+                <li class = "nav_buttons">Resume</li>
+                <li class = "nav_buttons">About Me</li>
+            </ul>
+        </header>
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Every Child Ready</h1>
+              <p class="lead">Every Child Ready is developing a responsive platform design for both desktop and mobile, to help educational professionals to enrich the lives of their students. Our redesign is an improvement because it’s a simplified, cleaner, more user friendly, navigable, and responsive platform. </p>
+            </div>
+          </div>
+
+        <!--Case Study Navigation-->
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#research">Research</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#definition">Definition</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="ideation">Ideation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="prototyping">Prototyping</a>
+              </li>   
+              <li class="nav-item">
+                <a class="nav-link active" href="testing">Testing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="conclusion">Conclusion</a>
+              </li>
+          </ul>
+
+        <!--End Navigation-->
         
+        <!--About the Project-->
+        <section id = "about" class = "description">
+            <div class = "section-header" class = "centered"><h1>About the Project</h1></div>
+            <h2>The Problem</h2>
+            <p>We have observed that the current site, both on mobile and web, have limitations within the design and lacks in some key resources which cause teachers to spend extra time planning and searching for outside tools.</p>
+
+            <h2>The Solution</h2>
+            <p>We believe providing a unified, concise, and easy to navigate platform for teachers of Every Child Ready to prepare lesson plans, input data, and communicate with parents will reduce the stress and extra work teachers often experience throughout the school year.</p>
+
+            <h2>The Team and My Roles</h2>
+            <p>The team consisted of four UX/UI Designers from the UX/UI Bootcamp though GW. For the project, I primarily acted as a project manager and UX Researcher. I did also participate in designing.</p>
+        </section>
+
+        <!--Research-->
+        <section id = "research" class = "description">
+            <div class = "section-header"><h1>User Research</h1></div>
+            <h2>The Current Site</h2>
+            <p>We started by taking a look at the current site. One member of our team works for Every Child Ready and was able to give us access to the platform and walk us through the site.</p>
+            <br>
+
+            <b><p>Initial Thoughts</p></b>
+            <ol class = "lists">
+                <li>The site is not intuitive for first time users.</li>
+                <li>The mobile version of the site has navigation glitches with the responsive design.</li>
+                <li>There are many useful features, but it is unclear how to use them.</li>
+                <li>The Home Page offers no information about the site or program.</li>
+              </ol> 
+
+              <!--make this a carousel?-->
+            <img class = "spanpage" src = "images/oldsite.png" >
+
+            <h2>Interviews</h2>
+            <p>We interviewed 5 current employees of Every Child Ready to figure the what/how/why of using the site. Three of the teachers were also able to show us a walkthrough of what they will usually do on the site.</p>
+
+            <br>
+
+            <b><p>What we learned from the interviews:</p></b>
+            <ol class = "lists">
+                <li>Most teachers use the site for planning and typically only visit the platform on desktop.</li>
+                <li>Teachers are using other resources/platforms outside of ECR to communicate with parents.</li>
+                <li>Mobile is not completely responsive, causing issues for those not working on desktops..</li>
+              </ol> 
+
+              <h2>Survey</h2>
+              <p>There were many areas of the site we wanted to work on, but because of time, we needed to prioritize a feature that was going to be beneficial for the teachers. We created a survey and sent it to approximately 300 users of the platform, with a response of about 30.</p>
+
+              <!--Quotes-->
+
+              <div class = "container-fluid">
+                <div class = "row">
+                  <div class = "cardContainer col-lg-4 col-md-4 col-sm-12">
+                    <div class="card">
+
+                      <div class="card-body">
+                        <p class="card-text align-items-center d-flex justify-content-center">“I am using a new phone… and have been 
+                            forced to try to navigate using a cellphone that 
+                            the system kept saying it was incapable of 
+                            accessing… I need a laptop or computer.”</p>
+                        <img src="images/profile.png" class="card-img-bottom" alt="...">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "cardContainer col-lg-4 col-md-4 col-sm-12">
+                    <div class="card"> <!--need to figure out how to center the text-->
+
+                      <div class="card-body">
+                        <p class="card-text">“Using a phone looks the same as if we were 
+                            using a computer and it’s hard to get 
+                            everything on a smaller screen.”</p>
+                        <img src="images/profile.png" class="card-img-bottom" alt="...">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class = "cardContainer col-lg-4 col-md-4 col-sm-12">
+                    <div class="card">
+
+                      <div class="card-body">
+                        <p class="card-text">“I think it would be helpful to have more quick 
+                            links for weekly materials, perhaps a list of 
+                            physical items teachers can prepare, than a 
+                            separate list of PDFs/ECR materials…”</p>
+                        <img src="images/profile.png" class="card-img-bottom" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <p>From the survey, we found the mobile site was almost unusable for the teachers, requiring them to only use the desktop version, which was not always convenient. We also decided to focus on the schedule page for the redesign based on finding out it was a highly used page that teachers were finding difficult to use.</p>
+
+            <h2>Empathy Map</h2>
+              <p>We created an empathy map because we wanted to get in the mind of a teacher, thinking about what they are doing everyday, and what they are thinking and feeling while they complete these tasks.</p>
+
+              <img src = "images/empathymap.png" >
+            </section>
+
+            <!--Defintion-->
+
+              <section id = "definition" class = "description">
+                <div class = "section-header" class = "centered"><h1>Definition & Synthesis</h1></div>
+
+                <h2>Problem Statement</h2>
+                <p>We believe providing a unified, concise, and easy to navigate platform for teachers of Every Child Ready to prepare lesson plans, input data, and communicate with parents will reduce the stress and extra work teachers often experience throughout the school year.</p>
+                <br>
+                <p>Every Child Ready was designed to set teachers up for success by providing accredited training for teachers, daily classroom lesson plans and corresponding student activities, in addition to tracking the progress of students. We have observed that the current site, both on mobile and web, have limitations within the design and resources on the platform, which is causing teachers to spend wasted time planning and searching for other platforms and resources. How might we improve the site so that the teachers are able to complete all tasks quicker and without having to go to other platforms?</p>
+
+                <h2>Feature Prioritization</h2>
+                <p>There were many features and pages we wanted to redesign, but because the assignment was for two weeks, we had to decide what to prioritize. We created a feature prioritization matrix to see what would we could get done in time that would benefit the users the most. This is what made us finally decide on focusing on the schedule page, especially for mobile.</p>
+                <br>
+                <p>Because we had to figure out what to prioritize, there were many elements that we did not get to work on, specifically the idea of a Parent Portal for teachers to be able to easily communicate with parents without having to change platforms.</p>
+
+                <img class = "spanpage" src = "images/fpmatrix.png">
+
+                <h2>Our UX Hypothesis</h2>
+                <p>Given that our users are not able to easily navigate the Every Child Ready Platform on their mobile device to perform tasks such as being able to check daily schedules and upcoming needed materials, as well as making changes to their schedule. This causes users to sometimes pause their lesson or spend extra time having to access the desktop version.</p>
+                <br>
+                <p>We believe that a more responsive web design for the weekly and daily grid, as well as a more intuitive scheduling tool, will allow teachers to better utilize the platform at any given moment and will not interrupt their routine while teaching, minimizing their lesson planning efforts.</p>
+            </section>
+
+            <!--Ideation-->
+            <section id = "ideation" class = "description">
+              <div class = "section-header" class = "centered"><h1>Ideation</h1></div>
+
+              <h2>Story Board</h2>
+                <p>Thinking of our user, we came up with a story board, mapping out a situation where they would be needing the site, and how our new design could make their life easier.</p>
+
+                <!--Storyboard-->
+
+              <div class = "container-fluid">
+                <div class = "row">
+
+                  
+                    <div class="card-deck">
+                      <div class = "cardContainer col-lg-4 col-md-4 col-sm-12">
+                      <div class="card">
+                        <h5 class="card-title">Preparing for Class</h5>
+                        <img src="images/sb1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">A preK teacher at Every Child Ready scans over her lesson for the day.</p>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class = "cardContainer col-lg-4 col-md-4 col-sm-12">
+                      <div class="card">
+                        <h5 class="card-title">Asking the TA for Help</h5>
+                        <img src="images/sb2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">The teacher asks the TA what the materials are for the next lesson.</p>
+                        </div>
+                        </div>
+                      </div>
+
+                      <div class = "cardContainer col-lg-4 col-md-4 col-sm-12">
+                      <div class="card">
+                        <h5 class="card-title">Frustrated by the Platform</h5>
+                        <img src="images/sb3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">The TA uses her mobile device to log into the current ECR platform. It is not responsive and she can’t find the materials.</p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+
+                    <div class = "container-fluid">
+                      <div class = "row">
+      
+                        
+                          <div class="card-deck">
+                            <div class = "cardContainer col-lg-4 col-md-4 col-sm-12">
+                            <div class="card">
+                              <h5 class="card-title">New Responsive Site Released</h5>
+                              <img src="images/sb4.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">A few months later, the platform is updated. It is mobile friendly and offers a cleaner and more useful layout to allow for easy scheduling and discovery.</p>
+                              </div>
+                              </div>
+                            </div>
+      
+                            <div class = "cardContainer col-lg-4 col-md-4 col-sm-12">
+                            <div class="card">
+                              <h5 class="card-title">Features</h5>
+                              <img src="images/sb5.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">The update platform allows users to easily find information and potentially access a parent portal.</p>
+                              </div>
+                              </div>
+                            </div>
+      
+                            <div class = "cardContainer col-lg-4 col-md-4 col-sm-12">
+                            <div class="card">
+                              <h5 class="card-title">So Much Easier!</h5>
+                              <img src="images/sb6.png" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <p class="card-text">The new update makes the lives of the teachers and TA’s easier, fostering better learning for the children.</p>
+                              </div>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          </div>
+
+              <h2>Competitor Analysis</h2>
+                <p>Before we started sketching, we wanted to look at other sites and apps to see what the trends were. We want the platform to be intuitive for our users, so sticking to design patterns they are used to seeing would be beneficial.</p>
+                <br>
+                <p>For desktop, we looked at other teaching platforms, like Blackboard and Canvas. We noticed the sidebar navigation was consistent with these sites. The Every Child Ready site also links to Canvas, which was all the more reason we felt like we should incorporate it to the platform, so users were not having to learn multiple design layouts.</p>
+
+                <img class = spanpage src = "images/canvas.png">
+
+                <p>On mobile, our biggest challenge was finding a way to design the schedule. The page contains a lot of information and features, so fitting it to a mobile screen was going to be difficult. We looked at Google Calendar to see how they are designed for mobile since Google was brought up in our user interviews as a site the teachers really liked because of its simple, intuitive design. </p>
+
+                <img class = spanpage src = "images/googlecalendar.png">
+
+              </section>
+
+              <!--Prototyping-->
+              <section id = "prototyping" class = "description">
+                <div class = "section-header" class = "centered"><h1>Prototyping</h1></hq></div>
+
+                <h2>Low Fidelity Wireframes</h2>
+                <p>With all the information we had gathered, we were ready to start sketching and designing. Using Adobe XD, I designed low fidelity wireframes. I started with the mobile wireframes since the mobile design was going to be more challenging because of the smaller screen. 
+                </p>
+                <br>
+                <p>For the mobile wireframes, we decided for users to only be able to see the schedule for one day of the week at a time, since seeing more was too overwhelming and unable to fit on the screen.
+                </p>
+                <br>
+                <p>The main navigation was also only accessible through a hamburger on mobile, while having the sidebar navigation on desktop. The biggest challenge with going from mobile to desktop was figuring out where to put all the extra navigation for the planner page that was consistent with the mobile design. I did not want the users who are used to using one device having to search too much if they had to switch. 
+                </p>
+
+                <img class = "spanpage" src = "images/wireframe.png">
+              </section>
+
+              <!--User Testing-->
+              <section id = "testing" class = "description">
+                <div class = "section-header" class = "centered"><h1>User Testing</h1></div>
+
+                <h2>Testing</h2>
+                <p>We each had two users, as well as have our instructor, who is familiar with Canvas, test our prototypes. For the test, I had users perform these tasks:
+                </p>
+                <ol class = "lists">
+                  <li>Log in</li>
+                  <li>Access the planner</li>
+                  <li>Assign a lesson to a teacher</li>
+                  <li>View the lesson plan</li>
+                  <li>Rate the lesson</li>
+                </ol> 
+
+                <p>From the testing I found that the users were not associating the “Edit” button with being able to assign the colors. Both went to click the lesson to try to assign the color.</p>
+
+                <h2>Iterating</h2>
+                <p>Taking the feedback from the usability testing, I knew I needed to make it clearer to users how to assign a lesson to a teacher, and my team had the same feedback. Originally we called it an “Edit” function which was confusing to users since it wasn’t clear that “Edit” would also mean “Assign.” I changed the button to say “Assign” as well as making it possible to edit the colors with each lesson because the initial reaction users had for assigning a lesson was clicking on the lesson, instead of the teacher.</p>
+
+                <img class = "spanpage" src = "images/wireframecolored.png">
+
+                <p>The last step was to apply a style guide to the new design for a high fidelity prototype. I chose to stick to colors from the main AppleTree site, as well as the colors from the Every Child Ready logo.</p>
+
+              </section>
+
+              <!--Conclusion-->
+              <section id = "conclusion" class = "description">
+                <div class = "section-header" class = "centered"></div>
+                <h2>Final Design</h2>
+                <p>Overall, I happy with the design my team and I were able to come up with. I think it solved the initial problem, and there are many places to go with it.</p>
+
+                <img class = "gif" src = "images/Prototype.gif">
+
+                <h2>Thoughts</h2>
+                <p>Collaborative working provided us the ability to find solutions to problems and then share as a group to help advance our designs. A huge obstacle was that there was so many tasks to be worked on but we had to prioritize which of the many features that are current in the site we wanted to focus on. As a team, we feel that we have updated the platform to have a professional feel to it that emulates other competitors such as Canvas and Blackboard.</p>
+                <br>
+                <p>Working in a team and collaborating helped a lot with this project. There were so many features we knew we needed to fix, but individually struggled to find the solutions. By communicating with each other, we were able to add to each other’s’ ideas to create the solution.
+                </p>
+                <br>
+                <p>There were three main struggles with this project:</p>
+                <ol class = "lists">
+                  <li>Prioritizing one feature to focus on</li>
+                  <li>Fitting so much information on the mobile version</li>
+                  <li>Designing a platform that I did not fully understand</li>
+                </ol> 
+
+                <h2>Future Opportunities</h2>
+                <p>The platform has many areas to grow, and it was a shame we could not work on more, but this leaves a lot of opportunities to come.</p>
+                <ol class = "lists">
+                  <li>Ensure that the platform is compatible on all devices</li>
+                  <li>Change the language of error messages and buttons</li>
+                  <li>Update the way teachers can customize the daily scheduling tool</li>
+                  <li>Update the FSG App to have similar color scheme and looks to the platform</li>
+                  <li>Update the FSG App to provide easier ways to input data</li>
+                  <li>Would like to create a Parent Portal</li>
+                </ol> 
+
+              </section>
+
+                  <!--Footer-->
+       <footer>
+        <h2>Let’s get in touch!</h2>
+        <img src = "images/lnlogo.png">
+        <p>Samantha Thomas<br>
+        samcthomas912@gmail.com<br>
+        703-509-8604
+     </p>
+
+    </footer>
+                  
+
+
+
+        <!--js links-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     </body>
 </html>
