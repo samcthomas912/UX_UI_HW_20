@@ -9,15 +9,21 @@ body{
   }
 
 .sitenav{
-    height: 100px;
-    background-color: #FAFAF6;
-    color: #031926;
-    padding-right:60px;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  height: 100px;
+  background-color: #FAFAF6;
+  color: #031926;
+  padding-right:60px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", "Arial", sans-serif;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
 }
+
+.sitenav a{
+  color: #031926;
+}
+
 
 .nav_buttons{
     display: block;
@@ -56,6 +62,7 @@ body{
   #myBtn:hover {
     background-color: #BD4F6C; 
   }
+
 a{
     text-decoration: none;
     color: #031926;
@@ -331,62 +338,8 @@ footer{
     }
 }
 
-
-/* Popup container - can be anything you want */
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
   
-  /* The actual popup */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -80px;
-  }
-  
-
-  
-  /* Add animation (fade in the popup) */
-  @-webkit-keyframes fadeIn {
-    from {opacity: 0;} 
-    to {opacity: 1;}
-  }
-  
-  @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-  /**/
-
-  
-
+/**Coming Soon Popup**/
   .sitenav ul{
     display: inline-block;
 }
